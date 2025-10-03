@@ -248,6 +248,46 @@
             color: #ccc;
         }
 
+        .changelog {
+            background: rgba(0, 255, 136, 0.05);
+            border: 1px solid #00ff88;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .changelog-title {
+            color: #00ff88;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .changelog-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .changelog-item {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+            display: flex;
+            align-items: center;
+        }
+
+        .changelog-item:last-child {
+            border-bottom: none;
+        }
+
+        .changelog-item::before {
+            content: '+';
+            color: #00ff88;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
         @media (max-width: 768px) {
             .title {
                 font-size: 2em;
@@ -316,6 +356,15 @@
                 <p>4. 🚀 Запустите BAT файл на компьютере друга</p>
             </div>
         </section>
+
+        <div class="changelog">
+            <div class="changelog-title">🆕 Что нового в версии 1.2.6</div>
+            <ul class="changelog-list">
+                <li class="changelog-item">Немного изменено расположение кнопок</li>
+                <li class="changelog-item">Добавлена Мастерская (можно загрузить проект с ТГ мастерской)</li>
+                <li class="changelog-item">Обновлен логотип программы</li>
+            </ul>
+        </div>
 
         <div class="warning">
             <div class="warning-title">⚠️ ВАЖНОЕ ПРЕДУПРЕЖДЕНИЕ</div>
@@ -411,7 +460,7 @@
                 });
             }, { threshold: 0.1 });
 
-            document.querySelectorAll('.feature-card, .info-section').forEach(el => {
+            document.querySelectorAll('.feature-card, .info-section, .changelog').forEach(el => {
                 el.style.opacity = '0';
                 el.style.transform = 'translateY(20px)';
                 el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -421,9 +470,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-

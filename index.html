@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrankMaster Pro v1.2.6 - Kent Corp.</title>
+    <title>PrankMaster Pro v1.3.0 - Kent Corp.</title>
     <meta name="description" content="PrankMaster Pro - профессиональная программа для создания безобидных BAT-пранков. Скачайте бесплатно!">
     
     <!-- Favicon with absolute URLs -->
@@ -288,6 +288,22 @@
             font-size: 1.2em;
         }
 
+        .install-notice {
+            background: rgba(255, 193, 7, 0.1);
+            border: 1px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .install-notice-title {
+            color: #ffc107;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
         @media (max-width: 768px) {
             .title {
                 font-size: 2em;
@@ -317,7 +333,7 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="title">PrankMaster Pro <span class="version-badge">v1.2.6</span></h1>
+            <h1 class="title">PrankMaster Pro <span class="version-badge">v1.3.0</span></h1>
             <p class="subtitle">Разработчик: Kent Corp. | Официальный сайт</p>
         </header>
 
@@ -325,17 +341,17 @@
             <h2>🚀 Скачайте программу прямо сейчас!</h2>
             <p>Полная версия программы для создания безобидных BAT-пранков</p>
             
-            <a href="https://github.com/kentrugithud/Pranker/releases/download/1.2.6/PrankMaster_Pro_Setup_v1.2.6.exe" class="download-btn" download>
+            <a href="https://github.com/kentrugithud/Pranker/releases/download/1.3.0/PrankMaster_Pro_Setup.exe" class="download-btn" download>
                 📥 Скачать PrankMaster Pro.exe
             </a>
             
             <div class="stats">
                 <div class="stat-item">
-                    <span class="stat-number">v1.2.6</span>
+                    <span class="stat-number">v1.3.0</span>
                     <span class="stat-label">Версия</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">~9,5 MB</span>
+                    <span class="stat-number">~24.2 MB</span>
                     <span class="stat-label">Размер</span>
                 </div>
                 <div class="stat-item">
@@ -348,21 +364,29 @@
                 </div>
             </div>
             
+            <div class="install-notice">
+                <div class="install-notice-title">📋 Важно перед установкой!</div>
+                <p>Перед установкой версии 1.3.0 рекомендуется удалить предыдущую версию программы через "Установка и удаление программ"</p>
+            </div>
+            
             <div class="instructions">
                 <h3 style="color: #00ff88; margin-bottom: 15px;">📋 Как использовать:</h3>
-                <p>1. 📥 Скачайте и запустите EXE файл (установка не требуется)</p>
+                <p>1. 📥 Скачайте и запустите EXE файл</p>
                 <p>2. 🎭 Выберите тип пранка в программе</p>
                 <p>3. ⚙️ Настройте параметры и создайте BAT файл</p>
-                <p>4. 🚀 Запустите BAT файл на компьютере друга</p>
+                <p>4. 🔗 Создайте ярлык для удобного запуска</p>
+                <p>5. 🚀 Запустите BAT файл на компьютере друга</p>
             </div>
         </section>
 
         <div class="changelog">
-            <div class="changelog-title">🆕 Что нового в версии 1.2.6</div>
+            <div class="changelog-title">🆕 Что нового в версии 1.3.0</div>
             <ul class="changelog-list">
-                <li class="changelog-item">Новый установщик</li>
-                <li class="changelog-item">Убрал создания ярлыка (придётся вручную)</li>
-                <li class="changelog-item">Исправил сохранения</li>
+                <li class="changelog-item">Добавлен в мастерской загрузить EXE</li>
+                <li class="changelog-item">Вернул создание ярлыка</li>
+                <li class="changelog-item">Улучшена система сохранения файлов</li>
+                <li class="changelog-item">Оптимизирован интерфейс</li>
+                <li class="changelog-item">Исправлены мелкие ошибки</li>
             </ul>
         </div>
 
@@ -388,7 +412,7 @@
             <div class="feature-card">
                 <div class="feature-icon">📥</div>
                 <div class="feature-title">Загрузка пранкеров</div>
-                <p>Создание и загрузка собственных пранкеров с BAT, Python и HTML файлами</p>
+                <p>Создание и загрузка собственных пранкеров с BAT, Python, HTML и EXE файлами</p>
             </div>
 
             <div class="feature-card">
@@ -396,17 +420,31 @@
                 <div class="feature-title">Мастерская пранков</div>
                 <p>Доступ к готовым пранкерам через Telegram канал сообщества</p>
             </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔗</div>
+                <div class="feature-title">Создание ярлыков</div>
+                <p>Удобное создание ярлыков для быстрого запуска пранков</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚙️</div>
+                <div class="feature-title">Поддержка EXE</div>
+                <p>Теперь можно загружать и использовать EXE файлы в пранкерах</p>
+            </div>
         </section>
 
         <section class="info-section">
             <h2 class="section-title">📋 О программе</h2>
-            <p><strong>PrankMaster Pro v1.2.6</strong> - это профессиональная программа для создания безобидных BAT-пранков с современным темным интерфейсом.</p>
+            <p><strong>PrankMaster Pro v1.3.0</strong> - это профессиональная программа для создания безобидных BAT-пранков с современным темным интерфейсом.</p>
             
             <h3 style="color: #00ff88; margin: 20px 0 10px 0;">🔧 Основные возможности:</h3>
             <ul style="list-style-position: inside; margin-left: 20px;">
                 <li>Создание BAT файлов с задержкой выполнения</li>
                 <li>Поддержка различных типов пранков</li>
                 <li>Система пользовательских пранкеров</li>
+                <li>Поддержка BAT, Python, HTML и EXE файлов</li>
+                <li>Создание ярлыков для удобного запуска</li>
                 <li>Темный современный интерфейс</li>
                 <li>Безопасные и обратимые пранки</li>
             </ul>
@@ -434,7 +472,7 @@
         </section>
 
         <footer class="footer">
-            <p>© 2025 Kent Corp. | PrankMaster Pro v1.2.6</p>
+            <p>© 2025 Kent Corp. | PrankMaster Pro v1.3.0</p>
             <p>Все права защищены. Только для ответственного использования.</p>
             <p style="margin-top: 10px;">GitHub Pages | prankerpro.github.io</p>
         </footer>
@@ -445,7 +483,7 @@
             const downloadBtn = document.querySelector('.download-btn');
             
             downloadBtn.addEventListener('click', function(e) {
-                if(!confirm('Вы уверены, что хотите скачать PrankMaster Pro v1.2.6?\n\nРазмер: ~9,5 MB\nПлатформа: Windows')) {
+                if(!confirm('Вы уверены, что хотите скачать PrankMaster Pro v1.3.0?\n\nРазмер: ~24.2 MB\nПлатформа: Windows\n\nПеред установкой рекомендуется удалить предыдущую версию!')) {
                     e.preventDefault();
                 }
             });
@@ -470,5 +508,3 @@
     </script>
 </body>
 </html>
-
-

@@ -39,7 +39,7 @@
             line-height: 1.5;
         }
         
-        .link {
+        .button {
             display: inline-block;
             background-color: #007bff;
             color: white;
@@ -47,11 +47,20 @@
             padding: 12px 24px;
             border-radius: 5px;
             font-size: 16px;
+            border: none;
+            cursor: pointer;
             transition: background-color 0.3s;
         }
         
-        .link:hover {
+        .button:hover {
             background-color: #0056b3;
+        }
+        
+        .url {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #666;
+            word-break: break-all;
         }
     </style>
 </head>
@@ -60,11 +69,14 @@
         <h1>🚫 Сайт недоступен</h1>
         <div class="message">
             <p><strong>Причина:</strong> новый домен</p>
-            <p>Вот ссылка с новым доменом:</p>
+            <p>Перейдите на новый сайт:</p>
         </div>
-        <a href="https://prankmaster.wuaze.com/?i=1" class="link">
+        <button class="button" onclick="window.location.href='https://prankmaster.wuaze.com/?i=1'">
+            Перейти
+        </button>
+        <div class="url">
             https://prankmaster.wuaze.com/?i=1
-        </a>
+        </div>
     </div>
 </body>
 </html>
